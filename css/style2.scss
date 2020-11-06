@@ -1,0 +1,213 @@
+$c0: transparent;
+$c1: #000;
+$c13: rgba(0,0,0,0.3);
+$c15: rgba(0, 0, 0, 0.5);
+$c2: #FFF;
+$c3: #7293A8;
+$c4: #5D9B9B;
+
+$ff1:'Architects Daughter', cursive;
+$ff2:'Roboto', sans-serif;
+
+$fs1: 15px;
+$fs2: 20px;
+$fs3: 25px;
+$fs4: 40px;
+
+@mixin padding{
+    padding: 10px 20px;
+}
+
+@mixin shadow{
+    box-shadow: 0px 2px 10px $c1;
+}
+
+@mixin radius{
+    border-radius: 10px;
+}
+
+//  ********************* LE HEADER *********************
+
+// Header des autres pages que l'index
+header{
+    background-image: url(../img/reservation.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    a{
+        color:$c2;
+    }
+    nav{
+        position:relative;
+    }
+    .container-title {
+        position:relative;
+        padding-top: 100px;
+    }
+}
+
+//  ********************* SECTION *********************
+
+section{
+    h2{
+        text-align: center;
+        color:$c4;
+        font-family: $ff1;
+        font-size: $fs4;
+    }
+    // Calendrier de réservation
+    .date{
+        background-color: $c4;
+        color:$c2;
+        label{
+            color:$c2;
+        }
+        input{
+            border:2px solid $c0;
+            transition: border 0.5s;
+        }
+        input:focus{
+            border: 2px solid $c1;
+        }
+    }
+    img{
+        @include shadow;
+    }
+    // tableau récapitulatif de la réservation
+    .summary{
+        width:450px;
+
+    }
+    table{
+    width:100%;
+    background-color: $c4;
+    @include padding;
+    @include shadow;
+        th{
+            font-weight: 600;
+            font-size: $fs3;
+            font-family: $ff1;
+            color: $c4;
+            padding-bottom: 30px;
+        }
+        td{
+            padding: 20px 0;
+            font-weight: 300;
+            font-size: $fs1;
+            color: $c2;
+            border-bottom: 2px solid $c4;
+        }
+    }
+    // Les formulaires de contact et de paiement
+    form{
+        @include padding;
+        label{
+            color: $c3;
+        }
+        p{
+            padding: 10px 0;
+            color: $c4;
+            text-decoration: underline;
+        }
+        select{
+            border:2px solid $c2;
+            transition: border 0.5s;
+        }
+        select:focus{
+            border: 2px solid $c4;
+        }
+        .confirm{
+            @include padding;
+            text-align: center;
+        }
+        input[type="submit"]{
+            background-color: $c4;
+            border:none;
+            outline: none;
+            color:$c2;
+            cursor: pointer;
+            @include padding;
+            transition: transform 0.7s;
+        }
+        input[type="submit"]:hover{
+            transform: scale(0.9);
+        }
+        .send{
+            @include padding;
+        }
+
+        .secure{
+            box-shadow:none;
+            width:30px;
+            height:30px;
+            border:none;
+            align-items: center;
+            padding-top: 20px;
+        }
+        a{
+            color:$c1;
+        }
+    }
+    .contact{
+        text-align: left;
+        form{
+            text-align: center;
+            padding: 10px 40px;
+            background-color: $c4;
+            @include shadow;
+            label{
+                color:$c2;
+                display:block;
+            }
+        }
+        input,textarea,select{
+            border:2px solid $c15;
+            transition: border 0.5s;
+            outline: none;
+            margin: 10px 0;
+        }
+        input:focus, textarea:focus{
+            border: 2px solid $c4;
+        }
+        input[type="submit"]{
+            background-color: #fff;
+            color:$c4;
+        }
+        input[type="email"]:focus{
+            &:invalid{
+                border: 2px solid red;
+            }
+        }
+
+    }
+
+}
+#bedroom, #cabane{
+    border: 2px solid $c4;
+}
+#avis{
+    .card{
+        background-color: $c3;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    form{
+        text-align: center;
+    }
+    label{
+        display:block;
+    }
+}
+
+
+// Les images des chambres et cabanes sur leurs pages respectives
+
+#description-bedroom img, #description-cabane img{
+    width:400px;
+    height:300px;
+}
+
+

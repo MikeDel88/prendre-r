@@ -1,0 +1,217 @@
+header {
+  background-image: url(../img/reservation.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+header a {
+  color: #FFF;
+}
+
+header nav {
+  position: relative;
+}
+
+header .container-title {
+  position: relative;
+  padding-top: 100px;
+}
+
+section h2 {
+  text-align: center;
+  color: #5D9B9B;
+  font-family: "Architects Daughter", cursive;
+  font-size: 40px;
+}
+
+section .date {
+  background-color: #5D9B9B;
+  color: #FFF;
+}
+
+section .date label {
+  color: #FFF;
+}
+
+section .date input {
+  border: 2px solid transparent;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+section .date input:focus {
+  border: 2px solid #000;
+}
+
+section img {
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+}
+
+section .summary {
+  width: 450px;
+}
+
+section table {
+  width: 100%;
+  background-color: #5D9B9B;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+}
+
+section table th {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Architects Daughter", cursive;
+  color: #5D9B9B;
+  padding-bottom: 30px;
+}
+
+section table td {
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFF;
+  border-bottom: 2px solid #5D9B9B;
+}
+
+section form {
+  padding: 10px 20px;
+}
+
+section form label {
+  color: #7293A8;
+}
+
+section form p {
+  padding: 10px 0;
+  color: #5D9B9B;
+  text-decoration: underline;
+}
+
+section form select {
+  border: 2px solid #FFF;
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+section form select:focus {
+  border: 2px solid #5D9B9B;
+}
+
+section form .confirm {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+section form input[type="submit"] {
+  background-color: #5D9B9B;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 10px 20px;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+section form input[type="submit"]:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section form .send {
+  padding: 10px 20px;
+}
+
+section form .secure {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 30px;
+  height: 30px;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+section form a {
+  color: #000;
+}
+
+section .contact {
+  text-align: left;
+}
+
+section .contact form {
+  text-align: center;
+  padding: 10px 40px;
+  background-color: #5D9B9B;
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+}
+
+section .contact form label {
+  color: #FFF;
+  display: block;
+}
+
+section .contact input, section .contact textarea, section .contact select {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+  outline: none;
+  margin: 10px 0;
+}
+
+section .contact input:focus, section .contact textarea:focus {
+  border: 2px solid #5D9B9B;
+}
+
+section .contact input[type="submit"] {
+  background-color: #fff;
+  color: #5D9B9B;
+}
+
+section .contact input[type="email"]:focus:invalid {
+  border: 2px solid red;
+}
+
+#bedroom, #cabane {
+  border: 2px solid #5D9B9B;
+}
+
+#avis .card {
+  background-color: #7293A8;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#avis form {
+  text-align: center;
+}
+
+#avis label {
+  display: block;
+}
+
+#description-bedroom img, #description-cabane img {
+  width: 400px;
+  height: 300px;
+}
+/*# sourceMappingURL=style2.css.map */

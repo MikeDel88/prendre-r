@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- DESCRIPTION ROBOTS GOOGLE -->
+        <meta name="description" content="Prendre l'R, Louer nos chambres et cabanes au meilleur prix">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <!-- FEUILLES DE STYLES -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/mobile_style.css">
+        <!-- FAV ICO -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- TITRE DE LA PAGE -->
+        <title>Prendre l'R | Paiement</title>
+    </head>
+
+    <body>
+        <!-- DEBUT HEADER -->
+        <!-- Contient la vidéo de présentation -->
+        <header id="top">
+            <!-- background noir sur la vidéo -->
+            <span class="bg-header"></span>
+            <!-- bandeau fixed de la barre de navigation -->
+            <div class="fond-nav">
+                <nav class="flex flex-around  flex-center">
+                    <!-- titre du site / Logo -->
+                    <p class="nav-title">
+                        <!-- faire un lien -->
+                        <strong><a href="index.html">Prendre l'R</a> / <a href="reservation.html">Réservation</a> /
+                            Paiement</strong>
+                    </p>
+                    <!-- menu de navigation -->
+                    <ul class="menu flex">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#bedroom">Hébergements</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- changement de langue -->
+                    <form method="POST" action="#">
+                        <select name="language" id="language">
+                            <option value="FR" selected>FR</option>
+                            <option value="EN">EN</option>
+                            <option value="ES">ES</option>
+                            <option value="DE">DE</option>
+                        </select>
+                    </form>
+                </nav>
+            </div>
+            <!-- titre principal et accroche -->
+            <div class="container container-title">
+                <h1 class="">prendre l'r</h1>
+            </div>
+
+        </header>
+        <!-- FIN HEADER -->
+
+        <!-- DEBUT MAIN -->
+        <main>
+            <!-- DEBUT SECTION -->
+            <section id="paiement">
+                <h2>Finaliser la réservation</h2>
+                <article class="container flex flex-center">
+                    <!-- tableau récapitulatif de la réservation client -->
+                    <div class="summary">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Récapitulatif</th>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chambre / Cabane</td>
+                                    <td>X euros / nuit</td>
+                                </tr>
+                                <tr>
+                                    <td>Nombre Adultes</td>
+                                    <td>X personnes</td>
+                                </tr>
+                                <tr>
+                                    <td>Nombre d'enfants</td>
+                                    <td>X enfants</td>
+                                </tr>
+                                <tr>
+                                    <td>Nombre d'animaux</td>
+                                    <td>X animaux</td>
+                                </tr>
+                                <tr>
+                                    <td>Options</td>
+                                    <td>SPA + Draps + Petit déjeuner</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>X euros</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- formulaire pour le paiement par carte bancaire -->
+                    <form method="POST" action="#" class="container">
+                        <h3>Paiement</h3>
+                        <div class="send flex flex-between">
+                            <label for="name">Votre prénom</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="send flex flex-between">
+                            <label for="last-name">Votre nom</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                        <div class="send flex flex-between">
+                            <label for="cb">Le numéro de carte</label>
+                            <input type="text" name="cb" id="cb">
+                        </div>
+                        <div class="send flex flex-between">
+                            <label>Expiration /</label>
+                            <label for="month">Mois :</label>
+                            <select id="month" name="month">
+                                <option selected>Janvier</option>
+                                <option>Février</option>
+                                <option>Mars</option>
+                                <option>Avril</option>
+                                <option>Mai</option>
+                                <option>Juin</option>
+                                <option>Juillet</option>
+                                <option>Août</option>
+                                <option>Septembre</option>
+                                <option>Octobre</option>
+                                <option>Novembre</option>
+                                <option>Décembre</option>
+                            </select>
+                            <label for="year">Année :</label>
+                            <select id="year" name="year">
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
+                        <div class="send flex flex-between">
+                            <label for="crypto">Cryptogramme</label>
+                            <input type="password" id="crypto">
+                        </div>
+                        <div class="confirm">
+                            <a href="reservation.html">Annuler</a>
+                            <input type="submit" value="Confirmer">
+                        </div>
+                        <div class="send">
+                            <p>
+                                <!-- Logo du paiement sécurisé 3D Secure -->
+                                <img class="secure" src="img/password.svg" title="3D Secure" alt="3D Secure">
+                            </p>
+                            <!-- Liens vers les CG de vente -->
+                            <p><a href="#">Voir les conditions générales de vente</a></p>
+                        </div>
+                    </form>
+                </article>
+            </section>
+
+            <!-- FIN SECTION -->
+        </main>
+
+        <!-- DEBUT FOOTER -->
+        <footer>
+            <article class="container footer-container flex">
+                <div class="footer1">
+                    <div class="address">
+                        <p>
+                            <strong>Nous retrouver</strong>:
+                            Ile au Moino
+                            24580 Rouffignac-Saint-Cernin-de-Reilhac
+                        </p>
+                        <p><strong>GPS</strong>: La latitude 45.05 et longitude 0.9667</p>
+                    </div>
+                    <div class="links flex flex-between">
+                        <div class="links-bedroom">
+                            <p>Chambres</p>
+                            <ul>
+                                <li><a href="chambres.html#chambre1">Charmante</a></li>
+                                <li><a href="chambres.html#chambre2">Pompadour</a></li>
+                                <li><a href="chambres.html#chambre3">Louisiane</a></li>
+                                <li><a href="chambres.html#chambre4">Victorine</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-cabane">
+                            <p>Cabanes</p>
+                            <ul>
+                                <li><a href="cabanes.html#cabane1">Castéron</a></li>
+                                <li><a href="cabanes.html#cabane2">Bianchi</a></li>
+                                <li><a href="cabanes.html#cabane3">Lilas</a></li>
+                                <li><a href="cabanes.html#cabane4">Case Della</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 flex">
+                    <div class="security">
+                        <p><strong>Rappel des norme de sécurité, enfants autorisés, norme de sécurités européennes,
+                                agréé par la commission de sécurité ERP</strong></p>
+                    </div>
+                    <div class="payement flex flex-around">
+                        <img src="icons/visa.svg" title="visa" alt="CB Visa">
+                        <img src="icons/mastercard.svg" title="mastercard" alt="mastercard">
+                    </div>
+                    <div class="social-network flex flex-around">
+                        <a href="#"><img src="icons/facebook.svg" title="facebook" alt="facebook"></a>
+                        <a href="#"><img src="icons/instagram-sketched.svg" title="instagram" alt="instagram"></a>
+                        <a href="#"><img src="icons/share-24px.svg" title="partager" alt="partager"></a>
+                    </div>
+                </div>
+            </article>
+        </footer>
+        <!-- FIN FOOTER -->
+    </body>
+
+</html>

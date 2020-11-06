@@ -1,0 +1,370 @@
+@-webkit-keyframes scroll {
+  from {
+    -webkit-transform: translate(15px, 0px);
+            transform: translate(15px, 0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(15px, 50px);
+            transform: translate(15px, 50px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes scroll {
+  from {
+    -webkit-transform: translate(15px, 0px);
+            transform: translate(15px, 0px);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate(15px, 50px);
+            transform: translate(15px, 50px);
+    opacity: 0.3;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+p, h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+strong, h2, h1 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Architects Daughter", cursive;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+header {
+  position: relative;
+}
+
+header video {
+  width: 100%;
+}
+
+header .bg-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  font-size: 20px;
+}
+
+header nav .nav-title {
+  font-family: "Architects Daughter", cursive;
+}
+
+header nav .menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav .menu a {
+  padding: 10px 20px;
+  color: #FFF;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav .menu a:hover {
+  border: 2px solid #7293A8;
+}
+
+header nav select {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 15px;
+}
+
+header .container-title {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+header .container-title p, header .container-title h2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+header .container-title h2 {
+  text-shadow: 3px 2px 3px black;
+}
+
+header .container-title .bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7293A8;
+  color: #FFF;
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+header .container-title .bouton:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 10px;
+}
+
+header .scroll {
+  display: block;
+  position: absolute;
+  border: 2px solid #FFF;
+  width: 40px;
+  height: 60px;
+  left: 49%;
+  border-radius: 3rem;
+  margin-top: 150px;
+}
+
+header .scroll::after {
+  content: ' ';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #FFF;
+  border-radius: 3rem;
+  -webkit-animation: scroll 2s infinite;
+          animation: scroll 2s infinite;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #5D9B9B;
+  font-family: "Architects Daughter", cursive;
+}
+
+section article {
+  padding-top: 40px;
+}
+
+section figure {
+  position: relative;
+}
+
+section figure .place {
+  position: absolute;
+  top: 430px;
+  right: 340px;
+}
+
+section footer {
+  text-align: center;
+}
+
+section .card {
+  position: relative;
+  width: 410px;
+  min-height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section .card .photo {
+  width: 410px;
+  height: 300px;
+}
+
+section .card .box-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transform: translateY(246px);
+          transform: translateY(246px);
+}
+
+section .card .box-card .box-title, section .card .box-card .box-description, section .card .box-card .box-footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+section .card .box-card .box-title {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+section .card .box-card .box-footer img {
+  width: 30px;
+  height: 30px;
+}
+
+section .card .box-card .box-footer a {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+section .card .box-card .box-footer a:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section .card .box-card:hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  cursor: pointer;
+  background-color: #FFF;
+  color: #000;
+}
+
+section p {
+  text-align: center;
+}
+
+section p .bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5D9B9B;
+  color: #FFF;
+  -webkit-box-shadow: 0px 2px 10px #000;
+          box-shadow: 0px 2px 10px #000;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+section p .bouton:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 10px 20px;
+  margin-top: 100px;
+  background-color: #7293A8;
+  color: #FFF;
+}
+
+footer .footer2 {
+  text-shadow: 3px 3px 5px #000;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer article {
+  text-align: left;
+}
+
+footer .links {
+  padding: 10px 20px;
+}
+
+footer .links p {
+  text-decoration: underline;
+  color: #000;
+}
+
+footer .links ul {
+  list-style: url("../favicon.ico");
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+footer img:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=style.css.map */

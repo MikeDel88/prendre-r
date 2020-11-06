@@ -1,0 +1,340 @@
+$c0: transparent;
+$c1: #000;
+$c13: rgba(0,0,0,0.3);
+$c15: rgba(0, 0, 0, 0.5);
+$c2: #FFF;
+$c3: #7293A8;
+$c4: #5D9B9B;
+
+$ff1:'Architects Daughter', cursive;
+$ff2:'Roboto', sans-serif;
+
+$fs1: 15px;
+$fs2: 20px;
+$fs3: 25px;
+$fs4: 40px;
+
+@mixin padding{
+    padding: 10px 20px;
+}
+
+@mixin shadow{
+    box-shadow: 0px 2px 10px $c1;
+}
+
+@mixin radius{
+    border-radius: 10px;
+}
+
+// ANIMATIONS
+@keyframes scroll{
+    from{
+        transform: translate(15px,0px);
+        opacity: 1;
+    }
+    to{
+        transform: translate(15px, 50px);
+        opacity: 0.3;
+    }
+}
+
+
+//BODY
+body{
+    font-family: $ff2;
+    letter-spacing: 2px;
+}
+// CASSE DE STYLE PAR DEFAULT
+p,h4{
+    margin: 0;
+    font-size: $fs1;
+}
+strong,h2,h1{
+    font-weight:400;
+}
+a{
+    text-decoration: none;
+    color:$c2;
+    font-size:$fs1;
+}
+// CONTAINER GENERAL
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+    line-height:$fs3;
+}
+//FLEXBOX
+.flex{
+    display:flex;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.flex-around{
+    justify-content: space-around;
+}
+.flex-center{
+    align-items: center;
+}
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+//TITRE PRINCIPAL
+h1{
+    font-size: $fs4;
+    font-family: $ff1;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px $c1;
+}
+
+
+
+
+
+
+//  ********************* LE HEADER *********************
+
+header{
+    position: relative;
+
+    video{
+        width:100%;
+    }
+    // Le BACKGROUND DE LA VIDEO
+    .bg-header{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background-color: $c13;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 100;
+        padding: 0 50px;
+        background-color: $c15;
+        color:$c2;
+        font-size: $fs2;
+
+        .nav-title{
+            font-family: $ff1;
+        }
+        .menu{
+            list-style-type: none;
+            padding: 0;
+
+            a{
+                @include padding;
+                color:$c2;
+                @include radius;
+                border: 2px solid $c0;
+                transition: all 0.5s ease;
+            }
+            a:hover{
+                border: 2px solid $c3;
+            }
+        }
+        // Le bouton pour changer la langue
+        select{
+            background-color: $c0;
+            border:1px solid $c2;
+            color:$c2;
+            font-size: $fs1;
+        }
+    }
+    .container-title{
+        position: absolute;
+        top:30%;
+        left:0;
+        right:0;
+        text-align: center;
+        color:$c2;
+        text-transform: uppercase;
+
+        p,h2{
+            font-size: $fs2;
+            margin:20px 0;
+
+        }
+        h2{
+            text-shadow: 3px 2px 3px black;
+        }
+        // Le liens de réservation dans le header
+        .bouton{
+            display:inline-block;
+            @include padding;
+            background-color: $c3;
+            color:$c2;
+            @include shadow;
+            transition: all 1s ease;
+        }
+        .bouton:hover{
+            transform: scale(0.9);
+            box-shadow: none;
+            @include radius;
+}
+    }
+    // La souris qui invient l'utilisateur au scroll de la page
+    .scroll{
+        display:block;
+        position: absolute;
+        border: 2px solid $c2;
+        width:40px;
+        height:60px;
+        left:49%;
+        border-radius: 3rem;
+        margin-top:150px;
+    }
+    .scroll::after{
+        content : ' ';
+        display:block;
+        width:10px;
+        height:10px;
+        background-color:$c2;
+        border-radius: 3rem;
+        animation: scroll 2s infinite;
+    }
+}
+
+//  ********************* SECTION  *********************
+
+section{
+    padding:20px 0;
+    h3{
+        text-align: center;
+        font-size: $fs4;
+        color:$c4;
+        font-family: $ff1;
+    }
+    article{
+        padding-top: 40px;
+    }
+// Image de la carte de france
+    figure{
+    position: relative;
+        .place{
+            position: absolute;
+            top:430px;
+            right:340px;
+        }
+    }
+    footer{
+        text-align: center;
+    }
+    // Les cards qui présentent les chambres et cabanes
+    .card{
+        position: relative;
+        width:410px;
+        min-height: 300px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        @include shadow;
+        background-color: $c15;
+
+        .photo{
+            width:410px;
+            height:300px;
+        }
+
+        .box-card{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background-color: $c15;
+            color:$c2;
+            transition:all 1s ease;
+            transform:translateY(246px);
+
+            .box-title, .box-description, .box-footer{
+                padding-top: 20px;
+                text-align: center;
+            }
+            .box-title{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .box-footer{
+                img{
+                    width:30px;
+                    height:30px;
+                }
+                a{
+                    transition: transform 1s;
+                }
+                a:hover{
+                    transform: scale(1.5);
+                }
+            }
+
+        }
+        .box-card:hover{
+            transform:translateY(0px);
+            cursor: pointer;
+            background-color: $c2;
+            color:$c1;
+        }
+    }
+    p{
+        text-align: center;
+        // Les liens qui ramène vers les pages chambres et cabanes
+        .bouton{
+            display:inline-block;
+            @include padding;
+            background-color: $c4;
+            color:$c2;
+            @include shadow;
+            transition: all 1s ease;
+        }
+        .bouton:hover{
+            transform: scale(0.9);
+            box-shadow: none;
+            @include radius;
+        }
+    }
+
+}
+
+//  ********************* FOOTER *********************
+
+footer{
+    @include padding;
+    margin-top: 100px;
+    background-color: $c3;
+    color:$c2;
+    .footer2{
+        text-shadow: 3px 3px 5px $c1;
+        text-align: center;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    article{
+        text-align: left;
+    }
+    .links{
+        @include padding;
+        p{
+            text-decoration: underline;
+            color:$c1;
+        }
+        ul{
+            list-style:url('../favicon.ico');
+        }
+    }
+    img{
+        width:40px;
+        height:40px;
+        transition: all 0.4s ease;
+    }
+    img:hover{
+        opacity: 0.8;
+        transform: scale(0.9);
+    }
+}
+

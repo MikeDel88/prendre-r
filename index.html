@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- DESCRIPTION ROBOTS GOOGLE -->
+        <meta name="description"
+            content="Prendre l'R, Location de chambres et cabanes dans les palombières, retrouver la nature et le dépaysement">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- FEUILLES DE STYLES -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile_style.css">
+        <!-- FAV ICO -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- TITRE DE LA PAGE -->
+        <title>Prendre l'R | Location Chambres - Cabanes Palombières</title>
+    </head>
+
+    <body>
+        <!-- DEBUT HEADER -->
+        <!-- Contient la vidéo de présentation -->
+        <header id="top">
+            <video autoplay loop>
+                <source src="video/Forest.mp4">
+                <p>Votre navigateur ne prend pas en charge la vidéo.
+                    Voici <a href="video/Forest.mp4">télécharger la vidéo</a>.</p>
+            </video>
+            <!-- background noir sur la vidéo -->
+            <span class="bg-header"></span>
+            <!-- bandeau fixed de la barre de navigation -->
+            <div class="fond-nav">
+                <nav class="flex flex-around  flex-center">
+                    <!-- titre du site / Logo -->
+                    <p class="nav-title">
+
+                        <strong><a href="index.html">Prendre l'R</a> / Accueil</strong>
+                    </p>
+                    <!-- menu de navigation -->
+                    <ul class="menu flex">
+                        <li><a href="#top">Accueil</a></li>
+                        <li><a href="#bedroom">Hébergements</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- changement de langue -->
+                    <form method="POST" action="#">
+                        <select name="language" id="language">
+                            <option value="FR" selected>FR</option>
+                            <option value="EN">EN</option>
+                            <option value="ES">ES</option>
+                            <option value="DE">DE</option>
+                        </select>
+                    </form>
+                </nav>
+            </div>
+            <!-- titre principal et accroche -->
+            <div class="container container-title">
+                <h1 class="">prendre l'r</h1>
+                <h2>les palombières</h2>
+                <h2>des lieux confortables en total opposition à votre quotidien </h2>
+                <p><a href="reservation.html" class="bouton">Reserver</a></p>
+                <!-- indication de scroll -->
+                <span class="scroll"></span>
+            </div>
+
+        </header>
+        <!-- FIN HEADER -->
+
+        <!-- DEBUT MAIN -->
+        <main>
+            <!-- DEBUT SECTION -->
+            <section id="description">
+                <h3 class="container">Le Lieu</h3>
+                <article class="container flex flex-between flex-center">
+                    <!-- carte de la france -->
+                    <figure>
+                        <img class="map" src="img/carte.png" alt="carte de france" title="carte de france">
+                        <img class="place" src="icons/place-24px.svg" alt="icone">
+                    </figure>
+                    <!-- description du concept -->
+                    <p>Petite, je grimpais dans les palombières véritables petites maisons aménagées pour des moments
+                        de pures distractions
+                        voilà l’idée du concept de calme de nature, des lieux confortables en total opposition à votre
+                        quotidien, l’entreprise
+                        familiale vous accueille pour vous faire vivre une parenthèse verte plein de charme et de bonne
+                        humeur.
+                    </p>
+                </article>
+                <!-- Adresse postale et GPS du lieu -->
+                <footer class="container">
+                    <p>
+                        <strong>Nous retrouver</strong>:
+                        Ile au Moino
+                        24580 Rouffignac-Saint-Cernin-de-Reilhac
+                    </p>
+                    <p><strong>GPS</strong>: La latitude 45.05 et longitude 0.9667</p>
+                </footer>
+            </section>
+            <!-- FIN SECTION DESCRIPTION -->
+
+            <!-- DEBUT SECTION CHAMBRES -->
+            <section id="bedroom">
+                <h3 class="container">Les Chambres</h3>
+                <article class="container flex flex-around flex-center flex-wrap">
+                    <div class="card">
+                        <!-- photo de la chambre -->
+                        <img class="photo" width="410" height="300" src="img/Chambre1.png" title="chambre"
+                            alt="chambre">
+                        <!-- bloc de description de prix nuitée -->
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Charmante</h4>
+                                <strong>A partir de 70 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <!-- lien pour réserver / voir plus / donner un avis / partager -->
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="chambres.html#chambre1"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/Chambre2.png" title="chambre"
+                            alt="chambre">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Pompadour</h4>
+                                <strong>A partir de 80 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="chambres.html#chambre2"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/Chambre3.png" title="chambre"
+                            alt="chambre">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Louisiane</h4>
+                                <strong>A partir de 90 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="chambres.html#chambre3"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/Chambre4.png" title="chambre"
+                            alt="chambre">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Victorine</h4>
+                                <strong>A partir de 100 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="chambres.html#chambre4"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Lien pour voir toutes les chambres -->
+                <p class="container"><a href="chambres.html" class="bouton">Voir toutes les chambres</a></p>
+            </section>
+            <!-- FIN SECTION CHAMBRES -->
+            <!-- DEBUT SECTION CABANES -->
+            <section id="cabane">
+                <h3 class="container">Les Cabanes</h3>
+                <article class="container flex flex-around flex-center flex-wrap">
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/cabane1.png" title="cabane" alt="cabane">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Castéron 15m2</h4>
+                                <strong>A partir de 40 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="cabanes.html#cabane1"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/cabane2.png" title="cabane" alt="cabane">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Bianchi 15m2</h4>
+                                <strong>A partir de 45 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="cabanes.html#cabane2"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/cabane3.png" title="cabane" alt="cabane">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Lilas 30m2</h4>
+                                <strong>A partir de 70 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="cabanes.html#cabane3"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="photo" width="410" height="300" src="img/cabane4.png" title="cabane" alt="cabane">
+                        <div class="box-card">
+                            <div class="box-title flex flex-between">
+                                <h4>Della 30m2</h4>
+                                <strong>A partir de 100 euros</strong>
+                            </div>
+                            <div class="box-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum, vel adipisci,
+                                    molestiae magni obcaecati, ratione iure eum ab consequatur aperiam impedit
+                                    dignissimos provident sit rerum omnis odit vitae officiis.</p>
+                            </div>
+                            <div class="box-footer flex flex-around flex-center">
+                                <a href="reservation.html"><img src="icons/calendar.svg" title="reservation"
+                                        alt="réservation"></a>
+                                <a href="cabanes.html#cabane4"><img src="icons/plus.svg" title="voir plus"
+                                        alt="voir plus"></a>
+                                <a href="avis.html"><img src="icons/star.svg" title="avis" alt="voir les avis"></a>
+                                <a href="#"><img src="icons/share.svg" title="partager" alt="partager"></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- liens pour voir toutes les cabanes -->
+                <p class="container"><a href="cabanes.html" class="bouton">Voir toutes les cabanes</a></p>
+            </section>
+            <!-- FIN SECTION CABANES -->
+        </main>
+
+        <!-- DEBUT FOOTER -->
+        <footer>
+            <article class="container footer-container flex">
+                <div class="footer1">
+                    <!-- adresse du site -->
+                    <div class="address">
+                        <p>
+                            <strong>Nous retrouver</strong>:
+                            Ile au Moino
+                            24580 Rouffignac-Saint-Cernin-de-Reilhac
+                        </p>
+                        <!-- coordonnées GPS -->
+                        <p><strong>GPS</strong>: La latitude 45.05 et longitude 0.9667</p>
+                    </div>
+                    <!-- Liens vers les chambres -->
+                    <div class="links flex flex-between">
+                        <div class="links-bedroom">
+                            <p>Chambres</p>
+                            <ul>
+                                <li><a href="chambres.html#chambre1">Charmante</a></li>
+                                <li><a href="chambres.html#chambre2">Pompadour</a></li>
+                                <li><a href="chambres.html#chambre3">Louisiane</a></li>
+                                <li><a href="chambres.html#chambre4">Victorine</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-cabane">
+                            <p>Cabanes</p>
+                            <ul>
+                                <li><a href="cabanes.html#cabane1">Castéron</a></li>
+                                <li><a href="cabanes.html#cabane2">Bianchi</a></li>
+                                <li><a href="cabanes.html#cabane3">Lilas</a></li>
+                                <li><a href="cabanes.html#cabane4">Case Della</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 flex">
+                    <!-- NORMES DE SECURITE -->
+                    <div class="security">
+                        <p><strong>Rappel des norme de sécurité, enfants autorisés, norme de sécurités européennes,
+                                agréé par la commission de sécurité ERP</strong></p>
+                    </div>
+                    <!-- Paiement sécurisé Visa et Mastercard -->
+                    <div class="payement flex flex-around">
+                        <img src="icons/visa.svg" title="visa" alt="CB Visa">
+                        <img src="icons/mastercard.svg" title="mastercard" alt="mastercard">
+                    </div>
+                    <!-- Liens vers les réseaux sociaux -->
+                    <div class="social-network flex flex-around">
+                        <a href="#"><img src="icons/facebook.svg" title="facebook" alt="facebook"></a>
+                        <a href="#"><img src="icons/instagram-sketched.svg" title="instagram" alt="instagram"></a>
+                        <a href="#"><img src="icons/share-24px.svg" title="partager" alt="partager"></a>
+                    </div>
+                </div>
+            </article>
+        </footer>
+        <!-- FIN FOOTER -->
+    </body>
+
+</html>

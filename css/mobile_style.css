@@ -1,0 +1,168 @@
+@media screen and (max-width: 1000px) {
+  header .scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  section article .map {
+    width: 70%;
+  }
+  section article .place {
+    top: 66%;
+    right: 50%;
+  }
+  section .summary {
+    width: 100%;
+  }
+  #paiement article, #contact article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #chambre1 div, #chambre2 div, #chambre3 div, #chambre4 div, #cabane1 div, #cabane2 div, #cabane3 div, #cabane4 div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-container .footer2 {
+    padding-bottom: 50px;
+  }
+  .footer-container .footer1 {
+    text-align: center;
+  }
+  #description-bedroom img, #description-cabane img {
+    margin: 20px 0;
+    width: 100%;
+  }
+  #contact form {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    min-height: 85vh;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+  }
+  header video {
+    display: none;
+  }
+  header nav {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  header nav .nav-title {
+    display: none;
+  }
+  header nav .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .menu li {
+    padding: 5px;
+  }
+  header nav .menu a {
+    padding: 0;
+    border: none;
+  }
+  header nav .menu a:hover {
+    border: none;
+    color: #7293A8;
+  }
+  header .container-title p, header .container-title h2 {
+    font-size: 13px;
+  }
+  header .container-title a {
+    font-size: 10px;
+  }
+  header .container-title .scroll {
+    display: block;
+    left: 48%;
+  }
+  #cabane article, #bedroom article {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #start, #end {
+    width: 100%;
+  }
+  .date {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservation-cabane {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    overflow: hidden;
+  }
+  #cabane img, #bedroom img {
+    width: 100%;
+  }
+  #cabane .box-footer img, #bedroom .box-footer img{
+    width:40px;
+  }
+  .reservation-cabane {
+    width: 100%;
+  }
+  #paiement article {
+    margin: 0;
+  }
+  #paiement form {
+    padding: 0;
+  }
+  #paiement form .send {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .card .box-card .box-title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section .contact {
+    text-align: center;
+  }
+  section .contact form,  section table{
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=mobile_style.css.map */

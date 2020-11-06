@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- DESCRIPTION ROBOTS GOOGLE -->
+        <meta name="description" content="Prendre l'R, Réservations des chambres et cabanes toute l'année !">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+        <!-- FEUILLES DE STYLES -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/mobile_style.css">
+        <!-- FAV ICO -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- TITRE DE LA PAGE -->
+        <title>Prendre l'R | Réservation</title>
+    </head>
+
+    <body>
+        <!-- DEBUT HEADER -->
+        <!-- Contient la vidéo de présentation -->
+        <header id="top">
+            <!-- background noir sur la vidéo -->
+            <span class="bg-header"></span>
+            <!-- bandeau fixed de la barre de navigation -->
+            <div class="fond-nav">
+                <nav class="flex flex-around  flex-center">
+                    <!-- titre du site / Logo -->
+                    <p class="nav-title">
+                        <!-- faire un lien -->
+                        <strong><a href="index.html">Prendre l'R</a> / Réservation</strong>
+                    </p>
+                    <!-- menu de navigation -->
+                    <ul class="menu flex">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#bedroom">Hébergements</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- changement de langue -->
+                    <form method="POST" action="#">
+                        <select name="language" id="language">
+                            <option value="FR" selected>FR</option>
+                            <option value="EN">EN</option>
+                            <option value="ES">ES</option>
+                            <option value="DE">DE</option>
+                        </select>
+                    </form>
+                </nav>
+            </div>
+            <!-- titre principal et accroche -->
+            <div class="container container-title">
+                <h1 class="">prendre l'r</h1>
+            </div>
+
+        </header>
+        <!-- FIN HEADER -->
+
+        <!-- DEBUT MAIN -->
+        <main>
+            <!-- DEBUT SECTION -->
+            <section id="date">
+                <h2>Réservations</h2>
+                <article class="container">
+                    <p>Sélectionnez vos dates de réservation</p>
+                    <form method="POST" action="#" class="container date flex flex-around">
+                        <label for="start">Arrivée :</label>
+
+                        <input type="date" id="start" name="trip-start" value="2020-08-18" min="2020-06-18"
+                            max="2020-12-31">
+                        <label for="end">Départ :</label>
+
+                        <input type="date" id="end" name="trip-end" value="2020-08-18" min="2020-06-18"
+                            max="2020-12-31">
+                    </form>
+                </article>
+            </section>
+            <section id="bedroom" class="container">
+                <h3>Réserver une chambre</h3>
+                <article class="container flex flex-around">
+                    <!-- image descriptive d'une chambre -->
+                    <img src="img/Chambre1.png" alt="reservation chambre" title="reserver une chambre">
+                    <form method="POST" action="paiement.html">
+                        <div class="choice">
+                            <label for="chambre">Chambre :</label>
+                            <select name="chambre" id="chambre">
+                                <option value="chambre1">Charmante 15m<sup>2</sup></option>
+                                <option value="chambre2">Pompadour 15m<sup>2</sup></option>
+                                <option value="chambre3">Louisiane 30m<sup>2</sup></option>
+                                <option value="chambre4">Victorine 30m<sup>2</sup></option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="adult">Nombre Adultes :</label>
+                            <select name="adult" id="adult">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="kid">Nombre Enfants :</label>
+                            <select name="kid" id="kid">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="pet">Nombre Animaux :</label>
+                            <select name="pet" id="pet">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <p>Options :</p>
+                        <div class="choice">
+                            <label for="drap">Spa :</label>
+                            <input type="checkbox">
+                            <span>(+50 euros)</span>
+                        </div>
+                        <div class="choice">
+                            <label for="breakfast">Petit déjeuner :</label>
+                            <input type="checkbox">
+                            <span>(+15 euros)</span>
+                        </div>
+                        <div class="choice">
+                            <label for="drap">Draps :</label>
+                            <input type="checkbox">
+                            <span>(+5 euros)</span>
+                        </div>
+                        <div class="price">
+                            <p>Prix : <strong>X</strong> euros</p>
+                        </div>
+                        <div class="send">
+                            <input type="submit" value="Réserver">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section id="cabane" class="container">
+                <h3>Réserver une cabane</h3>
+                <article class="container reservation-cabane flex flex-around">
+                    <form method="POST" action="paiement.html">
+                        <div class="choice">
+                            <label for="reservation-cabane">Cabane :</label>
+                            <select name="cabane" id="reservation-cabane">
+                                <option value="cabane1">Castéron 15m<sup>2</sup></option>
+                                <option value="cabane2">Bianchi 15m<sup>2</sup></option>
+                                <option value="cabane3">Lilas 30m<sup>2</sup></option>
+                                <option value="cabane4">Case Della 30m<sup>2</sup></option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="adult">Nombre Adultes :</label>
+                            <select name="adult">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="kid">Nombre Enfants :</label>
+                            <select name="kid">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div class="choice">
+                            <label for="pet">Nombre Animaux :</label>
+                            <select name="pet">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <p>Options :</p>
+                        <div class="choice">
+                            <label for="drap">Spa :</label>
+                            <input type="checkbox">
+                            <span>(+50 euros)</span>
+                        </div>
+                        <div class="choice">
+                            <label for="breakfast">Petit déjeuner :</label>
+                            <input type="checkbox" id="breakfast">
+                            <span>(+15 euros)</span>
+                        </div>
+                        <div class="choice">
+                            <label for="drap">Draps :</label>
+                            <input type="checkbox" id="drap">
+                            <span>(+5 euros)</span>
+                        </div>
+                        <div class="price">
+                            <p>Prix : <strong>X</strong> euros</p>
+                        </div>
+                        <div class="send">
+                            <input type="submit" value="Réserver">
+                        </div>
+                    </form>
+                    <!-- image descriptive d'une chambre -->
+                    <img src="img/cabane1.png" alt="reservation cabane" title="reserver une cabane">
+                </article>
+            </section>
+
+
+            <!-- FIN SECTION -->
+        </main>
+
+        <!-- DEBUT FOOTER -->
+        <footer>
+            <article class="container footer-container flex">
+                <div class="footer1">
+                    <div class="address">
+                        <p>
+                            <strong>Nous retrouver</strong>:
+                            Ile au Moino
+                            24580 Rouffignac-Saint-Cernin-de-Reilhac
+                        </p>
+                        <p><strong>GPS</strong>: La latitude 45.05 et longitude 0.9667</p>
+                    </div>
+                    <div class="links flex flex-between">
+                        <div class="links-bedroom">
+                            <p>Chambres</p>
+                            <ul>
+                                <li><a href="chambres.html#chambre1">Charmante</a></li>
+                                <li><a href="chambres.html#chambre2">Pompadour</a></li>
+                                <li><a href="chambres.html#chambre3">Louisiane</a></li>
+                                <li><a href="chambres.html#chambre4">Victorine</a></li>
+                            </ul>
+                        </div>
+                        <div class="links-cabane">
+                            <p>Cabanes</p>
+                            <ul>
+                                <li><a href="cabanes.html#cabane1">Castéron</a></li>
+                                <li><a href="cabanes.html#cabane2">Bianchi</a></li>
+                                <li><a href="cabanes.html#cabane3">Lilas</a></li>
+                                <li><a href="cabanes.html#cabane4">Case Della</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2 flex">
+                    <div class="security">
+                        <p><strong>Rappel des norme de sécurité, enfants autorisés, norme de sécurités européennes,
+                                agréé par la commission de sécurité ERP</strong></p>
+                    </div>
+                    <div class="payement flex flex-around">
+                        <img src="icons/visa.svg" title="visa" alt="CB Visa">
+                        <img src="icons/mastercard.svg" title="mastercard" alt="mastercard">
+                    </div>
+                    <div class="social-network flex flex-around">
+                        <a href="#"><img src="icons/facebook.svg" title="facebook" alt="facebook"></a>
+                        <a href="#"><img src="icons/instagram-sketched.svg" title="instagram" alt="instagram"></a>
+                        <a href="#"><img src="icons/share-24px.svg" title="partager" alt="partager"></a>
+                    </div>
+                </div>
+            </article>
+        </footer>
+        <!-- FIN FOOTER -->
+    </body>
+
+</html>
